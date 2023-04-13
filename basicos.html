@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset ="UTF-8">
+    <meta name ="viewport" content="width=device-width,initial-scale=1.0">
+    <title>FUNDAMENTOS JAVA SCRIPT</title>
+
+</head>
+<h1>Fundamentos JavaScript</h1>
+
+
+
+
+
+<script>
+    // var hola = "hola mundo"; // de forma global
+    // let hello = "Hello World" // de forma privada, es mucho mejor.
+    // console.log(hola);
+    // console.log(hello);
+    // console.log(window.hola);
+    // console.log(window.hello);
+    
+    // //AMBITO DE BLOQUE
+    // var musica = "ROCK";
+    // console.log("variable musica antes del bloque",musica);
+
+    // //estos son comentaarios
+    // /*
+    // COMENTARIO DE VARIAS LINEAS
+    // */
+
+    // {
+    //     var musica = "pop";
+    //     console.log("variable musica DENTRO del bloque",musica);
+    // }
+
+    // console.log("variable musica DESPUES del bloque",musica);
+
+    // let musica2 = "ROCK";
+    // console.log("variable musica antes del bloque",musica2);
+
+    // //estos son comentaarios
+    // /*
+    // COMENTARIO DE VARIAS LINEAS
+    // */
+
+    // {
+    //     let musica2 = "pop";
+    //     console.log("variable musica DENTRO del bloque",musica2);
+    // }
+
+    // console.log("variable musica DESPUES del bloque",musica2);
+    // let a;
+    // const PI = 3.1415;
+
+    // const NUEVE;
+
+    // console.log(PI);
+
+    // a ="kenai";
+
+    // console.log(a);
+
+//     const objecto ={
+
+//         nombre: "obed",
+//         edad: 23
+//     };
+
+//     const colores=["negro","azul","gris"];
+//     console.log(colores);
+//     console.log(objecto);
+//     objecto.correo = "obed@mail.com";
+//     objecto.edad = 25;
+//     colores.push("white");
+//     console.log(objecto);
+//     console.log(colores);
+
+
+
+// Cadenas de texto aka Strings
+
+// let nombre = "Obed";
+// let apellido = "Ruiz";
+// let saludo = new String ("hola");
+
+// console.log(nombre,apellido,saludo);
+// console.log(nombre.length,apellido.length,saludo.length,nombre.toUpperCase());
+
+//cocatenacion
+
+// let nombre = "Obed";
+// let apellido = "Ruiz";
+
+// let saludo = "Hola mi nombre es " + nombre + " "+ apellido;
+
+// console.log(saludo);
+
+// //interpolaridad
+// //Template String
+
+// let saludo2 = `Hola mi nombre es ${nombre} ${apellido}.`;
+// console.log(saludo2);
+// let ul = "<ul><li>Primavera</li><li>Verano</li><li>Otoño</li><li>Invierno</li></ul>";
+// let ul2 = `<ul><li></li>
+// <li></li>
+// <li></li>
+// <li></li></ul>`;
+// console.log(ul);
+// console.log(ul2);
+
+// let ul3 = "<ul>";
+//     ul3 += "<li>Enero</li>";
+//     ul3 +="<li>Febrero</li>";
+//     ul3 += "</ul>";
+
+//     console.log(ul3);
+
+
+// let a = 2 ; 
+// let b = new Number(1);
+// let c = 7.19;
+// let d = "5.6"
+
+// console.log(a,b)
+// console.log(c.toFixed(1));
+// console.log(c.toFixed(5));
+// console.log(parseInt(c));
+// console.log(parseFloat(c)); 
+// console.log(typeof c,typeof d);
+// console.log(a+b);
+// console.log(c+parseInt(d));
+// console.log(c+d);
+// console.log(c+parseInt(d));
+// console.log(c+parseFloat(d));
+
+//Valores booleanos
+
+// let verdadero = true;
+// let falso = false;
+
+// let v= Boolean(true);
+// let f = Boolean(false);
+
+// console.log(verdadero,falso,v,f);
+// console.log(typeof verdadero, typeof falso);
+
+// console.log(Boolean(0));
+// console.log(Boolean(-7));
+// console.log(Boolean(""));
+
+// UNDEFINED, NULL AND NaN
+
+// let indefinidad;
+// // console.log(indefeinida);
+
+// let nulo=null;
+
+// console.log(nulo);
+
+// let noEsUnNumero = "hola"*3.7;
+// console.log(noEsUnNumero);
+
+
+// FUNCION declarada
+
+// function estoEsUnaFuncion(){
+//     console.log("uno");
+//     console.log("dos");
+//     console.log("tres");
+
+// }
+
+// function unaFuncionQueDevuelveValor(){
+//     console.log("uno");
+//     return 19;
+//     console.log("dos");
+//     console.log("tres");
+
+//     return"La funcion ha retornado una Cadena de Texto";
+
+// }
+
+// // estoEsUnaFuncion();
+// let valorDeFuncion = unaFuncionQueDevuelveValor();
+
+// console.log(valorDeFuncion);
+
+
+function saludar(nombre="Desconocido",edad=0){
+console.log(`Hola mi nombre es ${nombre} y tengo ${edad} años`);
+}
+
+saludar("Obed",25)
+saludar();
+
+
+</script>
+
+</html>
